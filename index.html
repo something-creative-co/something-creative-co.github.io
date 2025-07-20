@@ -2,55 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Something</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Something Creative</title>
+  <link href="https://fonts.googleapis.com/css2?family=Butler:wght@400;700&family=Cormorant+Garamond:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Navigation -->
   <header>
-    <div class="logo">Something</div>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li class="menu-toggle">☰</li>
-      </ul>
-    </nav>
+    <a href="index.html"><img src="assets/logo.png" alt="Logo" class="logo" /></a>
   </header>
 
-  <!-- Hero / Gallery -->
-  <section id="home" class="gallery">
-    <div class="hero-slide">Check it out.</div>
-    <div class="hero-slide">Check it out.</div>
-    <div class="hero-slide">Check it out.</div>
-    <!-- Add more as desired -->
+  <section class="hero">
+    <!-- Full-bleed hero image or color -->
   </section>
 
-  <!-- About Us -->
-  <section id="about" class="about">
-    <h2>What is Something?</h2>
-    <p>We are Something: an event company founded by three queer female creatives... immersive experiences for our community.</p>
+  <div class="wave"></div>
+
+  <section id="events">
+    <h2>UPCOMING EVENTS</h2>
+    <a href="#" class="btn oval">Tickets Coming Soon</a>
   </section>
 
-  <!-- Mailing List -->
-  <section id="subscribe" class="subscribe">
-    <h2>Never miss a Something event.</h2>
-    <p>We’ll send you an email whenever we’re about to drop tickets for our upcoming parties.</p>
+  <div class="wave flip"></div>
+
+  <section id="subscribe">
+    <h2>NEVER MISS A SOMETHING EVENT</h2>
     <form id="subscribe-form">
       <input type="text" name="first" placeholder="First Name" required />
       <input type="text" name="last" placeholder="Last Name" required />
       <input type="email" name="email" placeholder="Email Address" required />
-      <button type="submit">Get on the list</button>
+      <button type="submit" class="btn">Subscribe</button>
     </form>
-    <p id="thanks-message" class="hidden">Thank you!</p>
+    <p id="thanks" class="hidden">Thank you for subscribing!</p>
   </section>
 
-  <!-- Footer / Contact -->
-  <footer id="contact">
-    <p>Contact us: <a href="mailto:hello@something-creative.co">hello@something-creative.co</a></p>
-    <p>&copy; 2025 Something Creative</p>
+  <div class="wave"></div>
+
+  <footer>
+    <a href="mailto:hello@something-creative.co">hello@something-creative.co</a>
   </footer>
 
   <script src="scripts.js"></script>

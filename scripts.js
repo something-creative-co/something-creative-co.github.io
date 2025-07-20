@@ -1,18 +1,26 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const toggle = document.querySelector('li.menu-toggle');
-  const navUl = document.querySelector('nav ul');
-  toggle.addEventListener('click', () => {
-    navUl.classList.toggle('show-menu');
-  });
-
-  const form = document.getElementById('subscribe-form');
-  const thankMsg = document.getElementById('thanks-message');
-
-  form.addEventListener('submit', e => {
+  document.getElementById('subscribe-form')?.addEventListener('submit', e => {
     e.preventDefault();
-    // you could send form data via fetch() here
-    form.reset();
-    form.classList.add('hidden');
-    thankMsg.classList.remove('hidden');
+    e.target.reset();
+    document.getElementById('subscribe-form').classList.add('hidden');
+    document.getElementById('thanks').classList.remove('hidden');
   });
 });
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    pagination: { el: '.swiper-pagination', clickable: true },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    breakpoints: {
+      768: { slidesPerView: 2 }
+    }
+  });
+</script>
