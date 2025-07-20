@@ -1,24 +1,11 @@
-document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('subscribe-form')?.addEventListener('submit', e => {
-    e.preventDefault();
-    e.target.reset();
-    document.getElementById('subscribe-form').classList.add('hidden');
-    document.getElementById('thanks').classList.remove('hidden');
-  });
-});
+// Highlight active nav link based on current page
+const links = document.querySelectorAll('.nav-link');
+const currentPath = window.location.pathname.split('/').pop();
 
-// Toggle mobile menu
-document.addEventListener('DOMContentLoaded', () => {
-  const hamburger = document.querySelector('.hamburger');
-  const mobileMenu = document.getElementById('mobile-menu');
-
-  hamburger.addEventListener('click', () => {
-    const expanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
-    hamburger.setAttribute('aria-expanded', !expanded);
-    if (mobileMenu.hasAttribute('hidden')) {
-      mobileMenu.removeAttribute('hidden');
-    } else {
-      mobileMenu.setAttribute('hidden', '');
-    }
-  });
+links.forEach(link => {
+  if (link.getAttribute('href') === currentPath) {
+    link.classList.add('active');
+  } else {
+    link.classList.remove('active');
+  }
 });

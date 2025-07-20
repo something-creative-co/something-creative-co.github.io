@@ -2,79 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Something Creative</title>
-  <link href="https://fonts.googleapis.com/css2?family=Butler:wght@400;700&family=Cormorant+Garamond:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <script defer src="scripts.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
+  <!-- HEADER -->
   <header class="main-header">
-  <a href="index.html" class="logo-button" aria-label="Go to home page">
-    <img src="assets/logo.png" alt="Logo" class="logo" />
-  </a>
-  <nav class="nav">
-    <a href="index.html" class="nav-link active">HOME</a>
-    <a href="about.html" class="nav-link">ABOUT</a>
-    <a href="mailto:hello@something-creative.co" class="nav-link">CONTACT</a>
-    <a href="https://instagram.com/something.creative" target="_blank" class="nav-icon">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" />
+    <a href="index.html" class="logo-button" aria-label="Home">
+      <img src="assets/logo-icon.png" alt="Logo" class="logo" />
     </a>
-  </nav>
-
-  <!-- Hamburger icon -->
-  <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-
-  <!-- Mobile menu -->
-  <nav id="mobile-menu" class="mobile-nav" hidden>
-    <a href="index.html" class="nav-link">HOME</a>
-    <a href="about.html" class="nav-link">ABOUT</a>
-    <a href="mailto:hello@something-creative.co" class="nav-link">CONTACT</a>
-    <a href="https://instagram.com/something.creative" target="_blank" class="nav-icon">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" />
-    </a>
-  </nav>
+    <nav class="nav-links">
+      <a href="index.html" class="nav-link active">HOME</a>
+      <a href="about.html" class="nav-link">ABOUT</a>
+      <a href="contact.html" class="nav-link">CONTACT</a>
+      <a href="https://instagram.com/something.creative" target="_blank" class="nav-icon" aria-label="Instagram">
+        <img src="assets/instagram-icon.svg" alt="Instagram" />
+      </a>
+    </nav>
   </header>
 
-  <section class="hero">
-    <!-- Full-bleed hero image or color -->
+  <!-- LOGO HERO -->
+  <section class="hero-logo-section">
+    <img src="assets/full-logo.png" alt="Something Creative" class="hero-logo" />
   </section>
 
-  <div class="wave"></div>
+  <!-- WAVE DIVIDER -->
+  <div class="wave-divider double"></div>
 
-  <section id="events">
+  <!-- UPCOMING EVENTS SECTION -->
+  <section class="events-section">
     <h2>UPCOMING EVENTS</h2>
-    <h3> BI BI BABY | 09/20/2025 </h3>
-    <p> BI BI BABY is a bi monthly art, dance, and costume party celebrating BISEXUALITY. This Bi Visibility Day we’re coming back bigger, better, and bi-er than ever. Stay tuned for details.</p>
-    <a href="#" class="btn oval">Tickets Coming Soon</a>
+    <h3>BI BI BABY | 09/20/2025</h3>
+    <p>
+      BI BI BABY is a bi-monthly art, dance, and costume party celebrating BISEXUALITY. This Bi Visibility Day we’re coming back bigger, better, and bi-er than ever. Stay tuned for details.
+    </p>
+    <button class="oval-button">Tickets Coming Soon</button>
+    <div class="event-bg"></div>
   </section>
 
-  <div class="wave flip"></div>
+  <!-- WAVE DIVIDER -->
+  <div class="wave-divider double"></div>
 
-  <section id="subscribe">
+  <!-- SUBSCRIBE SECTION -->
+  <section class="subscribe-section">
     <h2>NEVER MISS A SOMETHING EVENT</h2>
-    <form id="subscribe-form">
-      <div class="name-row">
-        <input type="text" name="first" placeholder="First Name" required />
-        <input type="text" name="last" placeholder="Last Name" required />
+    <form class="subscribe-form">
+      <div class="form-row">
+        <input type="text" placeholder="First Name" required />
+        <input type="text" placeholder="Last Name" required />
       </div>
-      <input type="email" name="email" placeholder="Email Address" required />
-      <button type="submit" class="btn oval">Get on the list.</button>
+      <div class="form-row">
+        <input type="email" placeholder="Email Address" required />
+      </div>
+      <button type="submit" class="oval-button">Get on the list.</button>
     </form>
-    <p id="thanks" class="hidden">Thank you for subscribing!</p>
-
   </section>
 
-  <div class="wave"></div>
+  <!-- WAVE DIVIDER -->
+  <div class="wave-divider double"></div>
 
+  <!-- FOOTER -->
   <footer>
-    <a href="mailto:hello@something-creative.co">hello@something-creative.co</a>
+    <p>hello@something-creative.co</p>
   </footer>
-
-  <script src="scripts.js"></script>
 </body>
 </html>
