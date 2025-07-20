@@ -63,15 +63,22 @@ p {
   background: white;
 }
 
-.nav-icon img {
-  height: 16px;
-  filter: brightness(0) invert(1);
+.nav-icon {
+  display: flex;
+  align-items: center;
+  transition: opacity 0.3s ease;
   opacity: 0.8;
-  transition: opacity 0.3s;
 }
 
-.nav-icon img:hover {
+.nav-icon:hover {
   opacity: 1;
+}
+
+.nav-icon svg {
+  display: block;
+  fill: white;
+  height: 18px;
+  width: 18px;
 }
 
 /* HERO SECTION */
