@@ -1,57 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>About – Something Creative</title>
-  <link href="https://fonts.googleapis.com/css2?family=Butler:wght@400;700&family=Cormorant+Garamond:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header>
-  <a href="index.html">
+  <header class="main-header">
+  <a href="index.html" class="logo-button" aria-label="Go to home page">
     <img src="assets/logo.png" alt="Logo" class="logo" />
   </a>
-  <nav class="nav-links">
-     <a href="index.html" class="nav-link">Home</a>
-    <a href="about.html" class="nav-link active">About</a>
-    <a href="https://instagram.com/something.creative" target="_blank" class="nav-link">
-      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" class="icon" />
+  <nav class="nav-right">
+    <a href="index.html" class="nav-link">HOME</a>
+    <a href="about.html" class="nav-link active">ABOUT</a>
+    <a href="mailto:hello@something-creative.co" class="nav-link">CONTACT</a>
+    <a href="https://instagram.com/something.creative" target="_blank" class="nav-icon">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" />
     </a>
   </nav>
-</header>
 
-  <section class="about-hero">
+  <!-- Hamburger icon -->
+  <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- Mobile menu -->
+  <nav id="mobile-menu" class="mobile-nav" hidden>
+    <a href="index.html" class="nav-link">HOME</a>
+    <a href="about.html" class="nav-link">ABOUT</a>
+    <a href="mailto:hello@something-creative.co" class="nav-link">CONTACT</a>
+    <a href="https://instagram.com/something.creative" target="_blank" class="nav-icon">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" />
+    </a>
+  </nav>
+  </header>
+
+<!-- Side-by-side arched photo and description -->
+<section class="about-hero white-bg">
+  <div class="about-container">
     <img src="assets/team-arch.jpg" alt="Team Photo" class="arch-photo" />
-  </section>
-
-  <div class="wave"></div>
-
-  <section class="about-intro">
-    <p>We are Something: an event company...</p>
-  </section>
-
-  <div class="wave flip"></div>
-
-  <section class="highlight">
-    <p><strong>Tell me Something good.</strong></p>
-  </section>
-
-  <div class="wave"></div>
-
-  <section class="testimonials">
-    <div class="testimonial">
-      <h3>Bellesa</h3>
-      <p>Working with Something was a dream …</p>
+    <div class="team-description">
+      <p>We are Something: an event company dedicated to creating memorable, inclusive, and joyous experiences for our community. Our mission is to connect people through creativity, celebration, and connection.</p>
     </div>
-    <div class="testimonial">
-      <h3>Common Froot</h3>
-      <p>Our experience collaborating …</p>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <footer>
-    <a href="mailto:hello@something-creative.co">hello@something-creative.co</a>
-  </footer>
-</body>
-</html>
+<!-- Wave divider -->
+<div class="wave-divider"></div>
+
+<!-- Black section with "Tell me Something good." -->
+<section class="highlight black-bg">
+  <p>Tell me <strong>Something</strong> good.</p>
+</section>
+
+<!-- Wave divider -->
+<div class="wave-divider flip"></div>
+
+<!-- Testimonials carousel -->
+<section class="testimonials">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide testimonial">
+        <h3>Bellesa</h3>
+        <p>Working with Something Creative was a dream — they brought energy, passion, and flawless execution to our events every time.</p>
+      </div>
+      <div class="swiper-slide testimonial">
+        <h3>Common Fr

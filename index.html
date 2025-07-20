@@ -10,14 +10,34 @@
 <body>
 
   <header class="main-header">
-    <nav class="nav">
-      <a href="index.html" class="nav-link active">HOME</a>
-      <a href="about.html" class="nav-link">ABOUT</a>
-      <a href="mailto:hello@something-creative.co" class="nav-link">CONTACT</a>
-      <a href="https://instagram.com/something.creative" target="_blank" class="nav-icon">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" />
-      </a>
-    </nav>
+  <a href="index.html" class="logo-button" aria-label="Go to home page">
+    <img src="assets/logo.png" alt="Logo" class="logo" />
+  </a>
+  <nav class="nav">
+    <a href="index.html" class="nav-link active">HOME</a>
+    <a href="about.html" class="nav-link">ABOUT</a>
+    <a href="mailto:hello@something-creative.co" class="nav-link">CONTACT</a>
+    <a href="https://instagram.com/something.creative" target="_blank" class="nav-icon">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" />
+    </a>
+  </nav>
+
+  <!-- Hamburger icon -->
+  <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- Mobile menu -->
+  <nav id="mobile-menu" class="mobile-nav" hidden>
+    <a href="index.html" class="nav-link">HOME</a>
+    <a href="about.html" class="nav-link">ABOUT</a>
+    <a href="mailto:hello@something-creative.co" class="nav-link">CONTACT</a>
+    <a href="https://instagram.com/something.creative" target="_blank" class="nav-icon">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" />
+    </a>
+  </nav>
   </header>
 
   <section class="hero">
