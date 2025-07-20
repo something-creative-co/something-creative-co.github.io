@@ -76,14 +76,16 @@ p {
 
 /* HERO SECTION */
 .hero-logo-section {
-  background: #000;
-  padding: 6rem 1rem 3rem;
+  background-color: #000;
+  /*padding-top: 6rem; /* This accounts for fixed header overlap */
+  /*padding-bottom: 3rem; */
   text-align: center;
 }
 
 .hero-logo {
   max-width: 500px;
   width: 80%;
+  height: auto;
 }
 
 /* WAVE DIVIDER */
@@ -119,17 +121,22 @@ p {
   padding: 0.6rem 2rem;
   border-radius: 999px;
   background: transparent;
-  border: 1px solid #000;
-  color: #000;
-  font-size: 0.95rem;
-  font-weight: 500;
+  border: 1px solid white;
+  color: white;
+  font-size: 1rem;
+  font-family: 'Cormorant Garamond', serif;
+  text-transform: uppercase;
   cursor: pointer;
-  transition: background 0.3s, color 0.3s;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .oval-button:hover {
-  background: #000;
-  color: #fff;
+  background: white;
+  color: black;
+}
+
+.button-wrapper {
+  text-align: center;
 }
 
 /* SUBSCRIBE SECTION */
