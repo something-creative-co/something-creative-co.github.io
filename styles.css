@@ -9,8 +9,55 @@ p{font-size:1.1rem;max-width:800px;margin:1rem auto;text-align:center;}
 a{color:inherit;text-decoration:none;}
 
 /* --- Header/Logo --- */
-header{position:fixed;top:0;width:100%;padding:1rem;background:#fff;z-index:10;}
-.logo{height:45px;}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-link {
+  font-family: 'Butler', serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  position: relative;
+  color: #111;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  text-decoration: none;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #111;
+  left: 0;
+  bottom: -4px;
+}
+
+.icon {
+  height: 20px;
+  width: 20px;
+  fill: #111;
+  filter: brightness(0);
+}
+
 
 /* --- Sections & Wave Divider --- */
 section{padding:8rem 1rem 4rem;}
@@ -42,3 +89,15 @@ section{padding:8rem 1rem 4rem;}
 .testimonial{min-width:250px;flex:0 0 auto;background:#f9f9f9;padding:2rem;border-radius:8px;text-align:center;}
 .testimonial h3{margin-bottom:0.5rem;}
 .testimonial p{font-size:1rem;}
+
+.wave-divider {
+  width: 100%;
+  height: 100px;
+  background: url('assets/wave.svg') bottom center no-repeat;
+  background-size: cover;
+}
+
+/* Flipped wave for inverted direction */
+.wave-divider.flip {
+  transform: rotate(180deg);
+}

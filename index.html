@@ -8,9 +8,20 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
+
   <header>
-    <a href="index.html"><img src="assets/logo.png" alt="Logo" class="logo" /></a>
-  </header>
+  <a href="index.html">
+    <img src="assets/logo.png" alt="Logo" class="logo" />
+  </a>
+  <nav class="nav-links">
+     <a href="index.html" class="nav-link active">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="https://instagram.com/something.creative" target="_blank" class="nav-link">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" class="icon" />
+    </a>
+  </nav>
+</header>
 
   <section class="hero">
     <!-- Full-bleed hero image or color -->
@@ -20,6 +31,8 @@
 
   <section id="events">
     <h2>UPCOMING EVENTS</h2>
+    <h3> BI BI BABY | 09/20/2025 </h3>
+    <p> BI BI BABY is a bi monthly art, dance, and costume party celebrating BISEXUALITY. This Bi Visibility Day we’re coming back bigger, better, and bi-er than ever. Stay tuned for details.</p>
     <a href="#" class="btn oval">Tickets Coming Soon</a>
   </section>
 
@@ -28,12 +41,15 @@
   <section id="subscribe">
     <h2>NEVER MISS A SOMETHING EVENT</h2>
     <form id="subscribe-form">
-      <input type="text" name="first" placeholder="First Name" required />
-      <input type="text" name="last" placeholder="Last Name" required />
+      <div class="name-row">
+        <input type="text" name="first" placeholder="First Name" required />
+        <input type="text" name="last" placeholder="Last Name" required />
+      </div>
       <input type="email" name="email" placeholder="Email Address" required />
-      <button type="submit" class="btn">Subscribe</button>
+      <button type="submit" class="btn oval">Get on the list.</button>
     </form>
     <p id="thanks" class="hidden">Thank you for subscribing!</p>
+
   </section>
 
   <div class="wave"></div>
