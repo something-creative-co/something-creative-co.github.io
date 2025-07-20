@@ -88,13 +88,6 @@ p {
   height: auto;
 }
 
-/* WAVE DIVIDER */
-.wave-divider.double {
-  height: 120px;
-  background: url('assets/wave-double.svg') no-repeat bottom center;
-  background-size: cover;
-}
-
 /* EVENTS SECTION */
 .events-section {
   position: relative;
