@@ -225,11 +225,14 @@ body::before {
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
-  color: white;
+  color: black;
+  background-color: white;
   z-index: 1;
 }
 
 .intro-column {
+  padding-top: 50px;
+  padding-bottom: 50px;
   float: left;
   width: 50%;
   font-family: 'Butler', serif;
@@ -260,6 +263,17 @@ body::before {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.mid-section {
+  position: relative;
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: white;
+  background-color: black;
+  z-index: 1;
 }
 
 /* RESPONSIVE */
