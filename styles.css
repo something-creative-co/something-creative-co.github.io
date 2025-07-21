@@ -175,6 +175,7 @@ svg {
 .subscribe-form {
   max-width: 600px;
   margin: 2rem auto;
+  color: transparent;
 }
 
 .form-row {
@@ -183,6 +184,7 @@ svg {
   justify-content: center;
   gap: 1rem;
   margin-bottom: 1.5rem;
+  color: transparent;
 }
 
 input[type="text"],
@@ -217,6 +219,24 @@ body::before {
   height: 56px;
 }
 
+/* ABOUT ME PAGE */
+.intro-column {
+  float: left;
+  width: 50%;
+}
+
+.pic-column {
+  float: right;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* RESPONSIVE */
 @media (max-width: 600px) {
   .nav-links {
@@ -237,5 +257,8 @@ body::before {
 @media screen and (max-width: 800px) { /*The following CSS runs only for displays with a width (in pixels) of less than 800px*/
     body {
         background-color: yellow;
+          .column {
+        width: 100%;
+  }
     }
 }
