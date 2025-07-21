@@ -247,6 +247,21 @@ body::before {
   clear: both;
 }
 
+.arched-top-image-wrapper {
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border-top-left-radius: 300px;
+  border-top-right-radius: 300px;
+}
+
+.arched-top-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* RESPONSIVE */
 @media (max-width: 600px) {
   .nav-links {
