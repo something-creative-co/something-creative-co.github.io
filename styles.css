@@ -175,7 +175,6 @@ svg {
 .subscribe-form {
   max-width: 600px;
   margin: 2rem auto;
-  color: transparent;
 }
 
 .form-row {
@@ -184,7 +183,6 @@ svg {
   justify-content: center;
   gap: 1rem;
   margin-bottom: 1.5rem;
-  color: transparent;
 }
 
 input[type="text"],
