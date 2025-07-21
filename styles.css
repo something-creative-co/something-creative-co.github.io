@@ -366,6 +366,7 @@ body::before {
   justify-content: center;
   gap: 16px;
   margin-top: 30px;
+  color: white;
 }
 
 .socials a img {
