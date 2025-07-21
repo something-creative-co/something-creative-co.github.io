@@ -85,6 +85,8 @@ p {
 .hero-logo-section {
   background-color: #000;
   text-align: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 .hero-logo {
@@ -96,6 +98,8 @@ p {
 /* EVENTS SECTION */
 .events-section {
   position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
   text-align: center;
   color: white;
   z-index: 1;
@@ -138,6 +142,8 @@ p {
 
 /* SUBSCRIBE SECTION */
 .subscribe-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
   text-align: center;
   background: url('assets/subscribe-bg.jpg') center/cover no-repeat;
   opacity: 0.8;
@@ -170,6 +176,7 @@ input[type="email"] {
 footer {
   background: #000;
   text-align: center;
+  padding: 2rem 1rem;
   font-size: 0.9rem;
   font-family: 'Butler', serif;
   text-transform: lowercase;
