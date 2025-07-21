@@ -299,7 +299,6 @@ body::before {
   color: black;
   padding: 4rem 2rem;
   text-align: center;
-  position: relative;
 }
 
 .testimonial-carousel {
@@ -310,7 +309,6 @@ body::before {
 
 .testimonial {
   display: none;
-  transition: opacity 0.4s ease-in-out;
 }
 
 .testimonial.active {
