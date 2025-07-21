@@ -25,11 +25,10 @@ p {
 .main-header {
   position: fixed;
   top: 0;
-  width: 100%;
+  max-width: 100%;
   background: black;
   color: white;
   height: 56px;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 1.5rem;
@@ -38,7 +37,6 @@ p {
   padding-right: 1.5rem;
   z-index: 1000;
   height: 60px;
-  flex-wrap: wrap;
 }
 
 .logo-button .logo {
@@ -317,13 +315,6 @@ body::before {
   color: black;
   padding: 4rem 2rem;
   text-align: center;
-}
-
-.testimonial-section {
-  background-color: white;
-  color: black;
-  padding: 4rem 2rem;
-  text-align: center;
   position: relative;
 }
 
@@ -334,18 +325,20 @@ body::before {
 }
 
 .testimonial-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 900px;
   margin: 0 auto;
+  padding: 0 60px; /* creates space for the arrows */
+  box-sizing: border-box;
 }
 
 .testimonial-carousel {
   width: 100%;
   max-width: 600px;
-  min-height: 150px;
+  text-align: center;
 }
 
 .testimonial {
@@ -372,35 +365,30 @@ body::before {
 
 /* Arrows */
 .testimonial-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   background-color: white;
   color: black;
   border: 2px solid black;
   border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  font-size: 22px;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
   cursor: pointer;
-  transition: all 0.3s ease;
-  z-index: 2;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.testimonial-arrow:hover {
-  background-color: black;
-  color: white;
-}
-
+/* Left and right positions */
 .testimonial-arrow.left {
-  position: absolute;
-  left: -60px;
-  top: 50%;
-  transform: translateY(-50%);
+  left: 10px;
 }
 
 .testimonial-arrow.right {
-  position: absolute;
-  right: -60px;
-  top: 50%;
-  transform: translateY(-50%);
+  right: 10px;
 }
 
 /* RESPONSIVE */
@@ -414,12 +402,16 @@ body::before {
   .form-row {
     flex-direction: column;
   }
-  .testimonial-arrow.left,
-  .testimonial-arrow.right {
-    left: 10px;
-    right: 10px;
-    transform: translateY(-50%);
+  .testimonial-wrapper {
+    padding: 0 30px;
   }
+
+  .testimonial-arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+  }
+
 }
 
 /* ADD RESPONSIVENESS FOR SIZING */
