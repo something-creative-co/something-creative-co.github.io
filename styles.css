@@ -98,8 +98,9 @@ p {
   position: relative;
   padding: 1rem 1rem 6rem;
   text-align: center;
-  background: #fff;
+  color: white;
   z-index: 1;
+  font
 }
 
 .events-section .event-bg {
