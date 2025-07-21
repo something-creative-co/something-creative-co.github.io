@@ -26,7 +26,8 @@ p {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #000;
+  background: black;
+  color: white;
   height: 56px;
   display: flex;
   justify-content: space-between;
@@ -36,6 +37,7 @@ p {
   padding-top: 1.5rem;
   padding-right: 1.5rem;
   z-index: 999;
+  flex-wrap: wrap;
 }
 
 .logo-button .logo {
@@ -55,6 +57,10 @@ p {
   font-size: 0.9rem;
   text-transform: uppercase;
   position: relative;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap:wrap;
+  overflow: visible;
 }
 
 .nav-link.active::after,
