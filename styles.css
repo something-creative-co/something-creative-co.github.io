@@ -55,10 +55,8 @@ p {
   font-size: 0.9rem;
   text-transform: uppercase;
   position: relative;
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap:wrap;
   overflow: visible;
+
 }
 
 .nav-link.active::after,
