@@ -296,6 +296,68 @@ body::before {
   z-index: 1;
 }
 
+/* TESTIMONIALS */
+.testimonial-section {
+  background-color: white;
+  color: black;
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.testimonial-carousel {
+  position: relative;
+  max-width: 600px;
+  margin: 2rem auto 0;
+  overflow: hidden;
+}
+
+.testimonial {
+  display: none;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.testimonial.active {
+  display: block;
+}
+
+.testimonial h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.testimonial p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: black;
+  padding: 0 1rem;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover,
+.next:hover {
+  color: gray;
+}
+
 /* RESPONSIVE */
 @media (max-width: 600px) {
   .nav-links {
