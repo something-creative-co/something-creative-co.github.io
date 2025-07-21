@@ -23,18 +23,19 @@ p {
 
 /* HEADER */
 .main-header {
-  position: relative;
+  position: fixed;
   top: 0;
   width: 100%;
-  background: black;
-  color: white;
+  background: #000;
   height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-left: 1.5rem;
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;
   padding-right: 1.5rem;
-  z-index: 1000;
-  height: 60px;
+  z-index: 999;
 }
 
 .logo-button .logo {
@@ -44,6 +45,7 @@ p {
 
 .nav-links {
   display: flex;
+  align-items: center;
   gap: 1.8rem;
 }
 
