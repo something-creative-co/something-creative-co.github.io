@@ -100,7 +100,6 @@ p {
   text-align: center;
   color: white;
   z-index: 1;
-  font
 }
 
 .events-section .event-bg {
@@ -143,6 +142,7 @@ p {
   text-align: center;
   background: url('assets/subscribe-bg.jpg') center/cover no-repeat;
   opacity: 0.8;
+  color: white;
 }
 
 .subscribe-form {
