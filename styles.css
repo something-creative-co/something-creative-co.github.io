@@ -47,6 +47,8 @@ p {
   display: flex;
   align-items: center;
   gap: 1.8rem;
+  float: right;
+  text-align: right;
 }
 
 .nav-link {
