@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.cdnfonts.com/css/butler" rel="stylesheet">
   <title>something</title>
   <link rel="icon" type="image/x-icon" href="/assets/logo-icon.png">
@@ -64,10 +63,9 @@
       <h3>Queer Collective</h3>
       <p>Something is truly exceptional in the level of professionalism and organization they bring to their work. From the planning stages to execution, they are meticulous in their attention to detail and have an unwavering dedication to delivering exceptional events. Their passion for work is evident in everything they do, and their commitment to their cause is truly inspiring. Without question, we would work with them again & already have plans to do so! I have no doubt that Something would be an outstanding partner for any organization. They are extremely reliable, professional, and always go above and beyond to ensure that every stakeholder is happy.</p>
     
-    <div class="testimonial-controls">
-        <button class="prev" aria-label="Previous testimonial">&#10094;</button>
-        <button class="next" aria-label="Next testimonial">&#10095;</button>
-    </div>
+    <button class="testimonial-arrow right" aria-label="Next testimonial">
+      &#10095;
+    </button>
 </section>
 
     <!-- FOOTER -->
@@ -84,29 +82,29 @@
   </footer>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function () {
     const testimonials = document.querySelectorAll('.testimonial');
-    const prev = document.querySelector('.prev');
-    const next = document.querySelector('.next');
+    const prev = document.querySelector('.testimonial-arrow.left');
+    const next = document.querySelector('.testimonial-arrow.right');
     let index = 0;
 
     function showTestimonial(i) {
-      testimonials.forEach(t => t.classList.remove('active'));
-      testimonials[i].classList.add('active');
+        testimonials.forEach(t => t.classList.remove('active'));
+        testimonials[i].classList.add('active');
     }
 
-    prev.addEventListener('click', function () {
-      index = (index - 1 + testimonials.length) % testimonials.length;
-      showTestimonial(index);
+    prev.addEventListener('click', () => {
+        index = (index - 1 + testimonials.length) % testimonials.length;
+        showTestimonial(index);
     });
 
-    next.addEventListener('click', function () {
-      index = (index + 1) % testimonials.length;
-      showTestimonial(index);
+    next.addEventListener('click', () => {
+        index = (index + 1) % testimonials.length;
+        showTestimonial(index);
     });
 
-    showTestimonial(index); // Show initial testimonial
-  });
+    showTestimonial(index);
+    });
 </script>
 
 </body>

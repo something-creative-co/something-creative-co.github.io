@@ -36,7 +36,8 @@ p {
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;
   padding-right: 1.5rem;
-  z-index: 999;
+  z-index: 1000;
+  height: 60px;
   flex-wrap: wrap;
 }
 
@@ -98,7 +99,7 @@ p {
   text-align: center;
   margin: 0;
   padding-bottom: 50px;
-  padding-top: 50px;
+  padding-top: 80px;
 }
 
 .hero-logo {
@@ -220,6 +221,17 @@ footer {
   color: white;
 }
 
+.socials {
+  margin-top: 1rem;
+}
+
+.socials a img {
+  width: 24px;
+  height: 24px;
+  margin: 0 0.5rem;
+  filter: brightness(0) invert(1); /* Makes sure they're white */
+}
+
 /* SPACING FROM FIXED HEADER */
 body::before {
   content: '';
@@ -307,6 +319,36 @@ body::before {
   text-align: center;
 }
 
+.testimonial-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.testimonial-arrow.left {
+  left: -60px; /* or 0 if you want it touching the edge */
+}
+
+.testimonial-arrow.right {
+  right: -60px;
+}
+
 .testimonial-carousel {
   max-width: 600px;
   margin: 0 auto;
@@ -330,11 +372,6 @@ body::before {
 .testimonial p {
   font-size: 1rem;
   line-height: 1.6;
-}
-
-/* Position buttons at the bottom and center */
-.testimonial-controls {
-  margin-top: 2rem;
 }
 
 .prev,
@@ -365,19 +402,6 @@ body::before {
 
 .testimonial-controls button:hover {
   color: gray;
-}
-
-.socials {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  margin-top: 30px;
-  color: white;
-}
-
-.socials a img {
-  width: 28px;
-  height: 28px;
 }
 
 /* RESPONSIVE */
