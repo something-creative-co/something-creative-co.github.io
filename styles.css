@@ -96,7 +96,6 @@ p {
 /* EVENTS SECTION */
 .events-section {
   position: relative;
-  padding: 1rem 1rem 6rem;
   text-align: center;
   color: white;
   z-index: 1;
@@ -139,7 +138,6 @@ p {
 
 /* SUBSCRIBE SECTION */
 .subscribe-section {
-  padding: 5rem 1rem 6rem;
   text-align: center;
   background: url('assets/subscribe-bg.jpg') center/cover no-repeat;
   opacity: 0.8;
@@ -172,7 +170,6 @@ input[type="email"] {
 footer {
   background: #000;
   text-align: center;
-  padding: 2rem 1rem;
   font-size: 0.9rem;
   font-family: 'Butler', serif;
   text-transform: lowercase;
