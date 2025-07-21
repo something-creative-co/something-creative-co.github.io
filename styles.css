@@ -1,7 +1,7 @@
 /* GLOBAL STYLES */
 body {
   margin: 0;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Butler', serif;
   background-color: #fff;
   color: #000;
 }
@@ -121,7 +121,7 @@ p {
   background: black;
   border: 1px solid white;
   font-size: 1rem;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Butler', serif;
   text-transform: uppercase;
   cursor: pointer;
   transition: background 0.3s ease, color 0.3s ease;
@@ -170,10 +170,13 @@ input[type="email"] {
 /* FOOTER */
 footer {
   background: #000;
-  color: #fff;
   text-align: center;
   padding: 2rem 1rem;
   font-size: 0.9rem;
+  font-family: 'Butler', serif;
+  text-transform: lowercase;
+  font-size: 1rem;
+  color: white;
 }
 
 /* SPACING FROM FIXED HEADER */
@@ -191,4 +194,12 @@ body::before {
   .form-row {
     flex-direction: column;
   }
+}
+
+
+@font-face {
+  font-family: 'Butler';
+  src: url('fonts/Butler/Butler-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
