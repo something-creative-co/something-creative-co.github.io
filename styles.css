@@ -119,6 +119,7 @@ p {
   padding: 0.6rem 2rem;
   border-radius: 999px;
   background: black;
+  color: white;
   border: 1px solid white;
   font-size: 1rem;
   font-family: 'Butler', serif;
@@ -129,7 +130,7 @@ p {
 
 .oval-button:hover {
   background: black;
-  color: black;
+  color: white;
 }
 
 .button-wrapper {
