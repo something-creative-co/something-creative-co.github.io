@@ -118,9 +118,8 @@ p {
   margin-top: 2rem;
   padding: 0.6rem 2rem;
   border-radius: 999px;
-  background: transparent;
+  background: black;
   border: 1px solid white;
-  color: black;
   font-size: 1rem;
   font-family: 'Playfair Display', serif;
   text-transform: uppercase;
