@@ -384,6 +384,9 @@ body::before {
 @media (max-width: 600px) {
   .nav-links {
     gap: 1rem;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 1rem;
   }
   .form-row {
     flex-direction: column;
