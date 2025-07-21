@@ -85,6 +85,7 @@ p {
 .hero-logo-section {
   background-color: #000;
   text-align: center;
+  margin: 0;
   padding-bottom: 50px;
   padding-top: 50px;
 }
@@ -98,6 +99,7 @@ p {
 /* EVENTS SECTION */
 .events-section {
   position: relative;
+  margin: 0;
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
@@ -141,6 +143,7 @@ p {
 
 /* SUBSCRIBE SECTION */
 .subscribe-section {
+  margin: 0;
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
@@ -212,11 +215,3 @@ body::before {
   font-style: normal;
 }
 
-@font-face {
-  font-family: myFirstFont;
-  src: url(sansation_light.woff);
-}
-
-div {
-  font-family: myFirstFont;
-}
