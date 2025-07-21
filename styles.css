@@ -59,8 +59,6 @@ p {
   justify-content: flex-end;
   flex-wrap:wrap;
   overflow: visible;
-  align-items: center;
-  white-space: nowrap;
 }
 
 .nav-link.active::after,
