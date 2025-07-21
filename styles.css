@@ -128,7 +128,6 @@ p {
   font-family: 'Butler', serif;
   text-transform: uppercase;
   cursor: pointer;
-  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .oval-button:hover {
@@ -208,7 +207,16 @@ body::before {
 
 @font-face {
   font-family: 'Butler';
-  src: url('fonts/Butler/Butler-Regular.otf') format('opentype');
+  src: url('/fonts/Butler/Butler-Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
+}
+
+div {
+  font-family: myFirstFont;
 }
