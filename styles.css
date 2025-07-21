@@ -303,10 +303,9 @@ body::before {
 }
 
 .testimonial-carousel {
-  position: relative;
   max-width: 600px;
-  margin: 2rem auto 0;
-  overflow: hidden;
+  margin: 0 auto;
+  min-height: 150px;
 }
 
 .testimonial {
@@ -329,29 +328,22 @@ body::before {
   line-height: 1.6;
 }
 
-.prev,
-.next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+/* Position buttons at the bottom and center */
+.testimonial-controls {
+  margin-top: 2rem;
+}
+
+.testimonial-controls button {
   background: transparent;
   border: none;
   font-size: 2rem;
   cursor: pointer;
   color: black;
-  padding: 0 1rem;
+  margin: 0 1rem;
+  transition: color 0.2s ease;
 }
 
-.prev {
-  left: 0;
-}
-
-.next {
-  right: 0;
-}
-
-.prev:hover,
-.next:hover {
+.testimonial-controls button:hover {
   color: gray;
 }
 
