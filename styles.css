@@ -101,6 +101,14 @@ p {
   height: auto;
 }
 
+svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 112px;
+    background:transparent;
+}
+
 /* EVENTS SECTION */
 .events-section {
   position: relative;
