@@ -128,7 +128,6 @@ p {
   border: 1px solid white;
   font-size: 1rem;
   font-family: 'Butler', serif;
-  text-transform: uppercase;
   cursor: pointer;
 }
 
@@ -147,9 +146,18 @@ p {
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
+  color: white;
+}
+
+.subsribe-section .subscribe-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
   background: url('assets/subscribe-bg.jpg') center/cover no-repeat;
   opacity: 0.8;
-  color: white;
+  z-index: -1;
 }
 
 .subscribe-form {
