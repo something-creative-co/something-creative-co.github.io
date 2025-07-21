@@ -220,9 +220,20 @@ body::before {
 }
 
 /* ABOUT ME PAGE */
+.intro-section {
+  position: relative;
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
 .intro-column {
   float: left;
   width: 50%;
+  font-family: 'Butler', serif;
 }
 
 .pic-column {
