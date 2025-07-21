@@ -208,10 +208,3 @@ body::before {
 }
 
 
-@font-face {
-  font-family: 'Butler';
-  src: url('/fonts/Butler/Butler-Regular.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
