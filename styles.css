@@ -172,6 +172,10 @@ input[type="email"] {
   flex: 1 1 250px;
 }
 
+.fa-instagram {
+  color: white;
+}
+
 /* FOOTER */
 footer {
   background: #000;
