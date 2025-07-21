@@ -65,5 +65,32 @@
   <footer>
     <p>hello@something-creative.co</p>
   </footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const testimonials = document.querySelectorAll('.testimonial');
+    const prev = document.querySelector('.prev');
+    const next = document.querySelector('.next');
+    let index = 0;
+
+    function showTestimonial(i) {
+      testimonials.forEach(t => t.classList.remove('active'));
+      testimonials[i].classList.add('active');
+    }
+
+    prev.addEventListener('click', function () {
+      index = (index - 1 + testimonials.length) % testimonials.length;
+      showTestimonial(index);
+    });
+
+    next.addEventListener('click', function () {
+      index = (index + 1) % testimonials.length;
+      showTestimonial(index);
+    });
+
+    showTestimonial(index); // Show initial testimonial
+  });
+</script>
+
 </body>
 </html>

@@ -1,28 +1,28 @@
 <script>
-  const testimonials = document.querySelectorAll('.testimonial');
-  const prev = document.querySelector('.prev');
-  const next = document.querySelector('.next');
-  let index = 0;
+  document.addEventListener('DOMContentLoaded', function () {
+    const testimonials = document.querySelectorAll('.testimonial');
+    const prev = document.querySelector('.prev');
+    const next = document.querySelector('.next');
+    let index = 0;
 
-  function showTestimonial(i) {
-    testimonials.forEach(t => t.classList.remove('active'));
-    testimonials[i].classList.add('active');
-  }
+    function showTestimonial(i) {
+      testimonials.forEach(t => t.classList.remove('active'));
+      testimonials[i].classList.add('active');
+    }
 
-  prev.addEventListener('click', () => {
-    index = (index - 1 + testimonials.length) % testimonials.length;
+    prev.addEventListener('click', () => {
+      index = (index - 1 + testimonials.length) % testimonials.length;
+      showTestimonial(index);
+    });
+
+    next.addEventListener('click', () => {
+      index = (index + 1) % testimonials.length;
+      showTestimonial(index);
+    });
+
+    // show first testimonial on load
     showTestimonial(index);
   });
-
-  next.addEventListener('click', () => {
-    index = (index + 1) % testimonials.length;
-    showTestimonial(index);
-  });
-
-  // Optional: Auto-rotate every 8 seconds
-  // setInterval(() => {
-  //   next.click();
-  // }, 8000);
 </script>
 
 
