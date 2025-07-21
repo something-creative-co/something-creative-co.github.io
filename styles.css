@@ -331,14 +331,30 @@ body::before {
   margin-top: 2rem;
 }
 
-.testimonial-controls button {
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   background: transparent;
   border: none;
   font-size: 2rem;
   cursor: pointer;
   color: black;
-  margin: 0 1rem;
-  transition: color 0.2s ease;
+  padding: 0 1rem;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover,
+.next:hover {
+  color: gray;
 }
 
 .testimonial-controls button:hover {
