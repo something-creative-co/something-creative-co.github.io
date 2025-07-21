@@ -106,7 +106,7 @@ svg {
     display: block;
     width: calc(100% + 1.3px);
     height: 112px;
-    background:transparent;
+    background: black;
 }
 
 /* EVENTS SECTION */
