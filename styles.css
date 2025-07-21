@@ -331,23 +331,36 @@ body::before {
   line-height: 1.6;
 }
 
-/* Position buttons at the bottom and center */
-.testimonial-controls {
-  margin-top: 2rem;
-}
-
-.testimonial-controls button {
-  background: transparent;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
+/* Arrow buttons */
+.testimonial-arrow {
+  background-color: white;
   color: black;
-  margin: 0 1rem;
-  transition: color 0.2s ease;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
 }
 
-.testimonial-controls button:hover {
-  color: gray;
+.testimonial-arrow:hover {
+  background-color: black;
+  color: white;
+}
+
+.testimonial-arrow.left {
+  position: absolute;
+  left: -70px;
+}
+
+.testimonial-arrow.right {
+  position: absolute;
+  right: -70px;
 }
 
 /* RESPONSIVE */
